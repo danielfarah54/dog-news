@@ -1,0 +1,17 @@
+{
+  "name": "dog-news",
+  "version": "1.0.0",
+  "description": "Dog News Microservice",
+  "repository": "",
+  "author": "Daniel Farah",
+  "license": "MIT",
+  "main": "src/",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint . --ext .ts",
+    "sonar": "ts-node ./bin/sonarQube/sonarQube.ts",
+    "code-check": "yarn lint && yarn sonar",
+    "ts-node": "ts-node -r tsconfig-paths/register"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
